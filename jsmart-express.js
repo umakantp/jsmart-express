@@ -4,7 +4,7 @@ var async = require('async')
 var findPartials = require('./find-partials')
 var fs = require('fs')
 var lruCache = require('lru-cache')
-var jSmart = require('jSmart')
+var jSmart = require('jsmart')
 var path = require('path')
 
 // Load a single file, and return the data.
