@@ -1,0 +1,52 @@
+{
+  "name": "jsmart-express",
+  "title": "jSmart-express",
+  "description": "Use jSmart (PHP Smarty port in JS) with partials in Express 3.",
+  "main": "jsmart-express.js",
+  "version": "1.0.0",
+  "url": "https://github.com/umakantp/jsmart-express/",
+  "keywords": [
+    "smarty",
+    "express",
+    "javascript",
+    "jsmart",
+    "template",
+    "templates"
+  ],
+  "author": "Umakant Patil <me@umakantpatil.com>",
+  "contributors": [
+    {
+      "name": "Umakant Patil",
+      "email": "me@umakantpatil.com"
+    }
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "async": "~0.2.10",
+    "jsmart": "~3.0.2",
+    "lru-cache": "~2.5.0"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-eslint": "^20.0.0",
+    "load-grunt-tasks": "^3.5.2",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "mocha": "~1.7",
+    "should": "~1.2"
+  },
+  "bugs": {
+    "url": "https://github.com/umakantp/jsmart-express/issues"
+  },
+  "scripts": {
+    "test": "grunt eslint && mocha",
+    "precommit": "grunt eslint && mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/umakantp/jsmart-express.git"
+  }
+}

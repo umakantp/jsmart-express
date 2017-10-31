@@ -1,0 +1,3 @@
+Hey, {$name}
+
+{include file="p1.smarty" nocache}

@@ -1,0 +1,4 @@
+Hey, {$name}
+
+{include file="filetwice.smarty"}
+{include "filetwice.smarty"}

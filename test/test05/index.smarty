@@ -1,0 +1,1 @@
+{include file="p1.smarty"}, {$name}, {{include "p2.smarty"}}
