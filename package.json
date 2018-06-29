@@ -3,7 +3,7 @@
   "title": "jSmart-express",
   "description": "Use jSmart (PHP Smarty port in JS) with partials in Express 3.",
   "main": "jsmart-express.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "url": "https://github.com/umakantp/jsmart-express/",
   "keywords": [
     "smarty",
