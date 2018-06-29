@@ -22,9 +22,9 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "async": "2.5.0",
-    "jsmart": "3.0.2",
-    "lru-cache": "4.1.1"
+    "async": "^2.5.0",
+    "jsmart": "^3.1.0",
+    "lru-cache": "^4.1.1"
   },
   "devDependencies": {
     "grunt": "1.0.1",
