@@ -3,7 +3,7 @@
 var async = require('async')
 var findPartials = require('./find-partials')
 var fs = require('fs')
-var lruCache = require('lru-cache')
+var LRU = require('lru-cache')
 var jSmart = require('jsmart')
 var path = require('path')
 
@@ -126,7 +126,7 @@ function render (templatePath, viewDirectory, viewExtension, options, cache, cal
 }
 
 function renderer (directory) {
-  var cache = lruCache({
+  var cache = new LRU({
     max: 50000,
     length: function (item) {
       return item.data.length
