@@ -120,7 +120,7 @@ function render (templatePath, viewDirectory, viewExtension, options, cache, cal
       return partials[name]
     }
 
-    var smarty = new jSmart(template)
+    var smarty = new jSmart(template, options.settings['jsmart-settings'])
     callback(err, smarty.fetch(options))
   })
 }
