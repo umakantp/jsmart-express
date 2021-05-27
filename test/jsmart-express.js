@@ -249,7 +249,7 @@ describe('jsmartExpress', function () {
     renderer('test/test10/index.smarty', {
       settings: {
         'view engine': 'smarty',
-        'layout': 'layout'
+        layout: 'layout'
       }
     }, function (err, result) {
       should.not.exist(err)
@@ -265,7 +265,7 @@ describe('jsmartExpress', function () {
     renderer('test/test11/index.smarty', {
       settings: {
         'view engine': 'smarty',
-        'layout': 'layout'
+        layout: 'layout'
       }
     }, function (err, result) {
       should.not.exist(err)
