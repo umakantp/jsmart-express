@@ -120,7 +120,12 @@ function render (templatePath, viewDirectory, viewExtension, options, cache, cal
       return partials[name]
     }
 
-    var smarty = new jSmart(template, options.settings['jsmart-settings'])
+    var settings = {}
+    if (options && options.settings && options.settings['jsmart-settings']) {
+      settings = options.settings['jsmart-settings']
+    }
+
+    var smarty = new jSmart(template, settings)
     callback(err, smarty.fetch(options))
   })
 }
