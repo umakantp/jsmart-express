@@ -275,4 +275,24 @@ describe('jsmartExpress', function () {
       done()
     })
   })
+
+  it('should render the view with custom delimiters', function (done) {
+    var renderer = jsmartExpress('test/test12')
+    renderer('test/test12/index.smarty', {
+      name: 'arnavi',
+      settings: {
+        'view engine': 'smarty',
+        'jsmart-settings': {
+          ldelim: '{{',
+          rdelim: '}}'
+        }
+      }
+    }, function (err, result) {
+      should.not.exist(err)
+      should.exist(result)
+      result.should.eql('custom delimiters arnavi\n')
+
+      done()
+    })
+  })
 })
